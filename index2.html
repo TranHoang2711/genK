@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GenK</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="js2.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body>
+    <!--    menu-top-->
+    <div class="menutop">
+        <div class="container-fluid">
+            <div class="container">
+                <ul>
+                    <li><a href="">GameK</a></li>
+                    <li><a href="">Kenh14</a></li>
+                    <li><a href="">Cafebiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end menu-top-->
+
+    <!--menu-->
+    <div class="menu">
+        <div class="container-fluid">
+            <div class="container menu-inside">
+                <div class="menulefft">
+                    <a href="">
+                        <img src="img/logogenk%20(2).png" alt="Trang thông tin dành cho tín đồ công nghệ">
+                    </a>
+                    <ul>
+                        <li class="kht"><a href="">Mobile</a></li>
+                        <li class="kht"><a href="">Tin ICT</a></li>
+                        <li class="kht"><a href="">Internet</a></li>
+                        <li class="kht"><a href="">khám phá</a></li>
+                        <li><i id="iconmenu" onclick="showmenu()"  class="fa fa-bars button"></i></li>
+                    </ul>
+
+                </div>
+                <div id="blur" class="menuright">
+                    <a  data-toggle="modal" data-target="#myModal">Video</a>
+                    <input id="fly" type="text" >
+                    <i onclick="show()" class="fa fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end menu-->
+
+
+<!--    menu-hide-->
+    <div id="flymenu" class="menu-hide">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="list-menu">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <ul>MOBILE<i  class="fa fa-chevron-right"></i><hr>
+                                <li><a href="">Điện thoại</a></li>
+                                <li><a href="">Máy tính bảng</a></li>
+                                <img src="img/ggplay.png" alt="">
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <ul>INTERNET<i  class="fa fa-chevron-right"></i><hr>
+                                <li><a href="">Digital Marketing</a></li>
+                                <li><a href="">Media</a></li>
+                                <img src="img/appst.png" alt="">
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <ul>KHÁM PHÁ<i  class="fa fa-chevron-right"></i><hr>
+                                <li><a href="">Lịch sử</a></li>
+                                <li><a href="">Tri thức</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <ul>TRÀ ĐÁ CN<i  class="fa fa-chevron-right"></i><hr>
+                                <li><a href="">Tản mạn</a></li>
+                                <li><a href="">Ý tưởng sáng tạo</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <ul>
+                                Tin ICT<i  class="fa fa-chevron-right"></i><hr>
+                                THỦ THUẬT<i  class="fa fa-chevron-right"></i><hr>
+                                SỐNG<i  class="fa fa-chevron-right"></i><hr>
+                                <i  class="fa fa-star"></i>EMAGAZINE<i  class="fa fa-chevron-right"></i><hr>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <ul>
+                                APP - GAMES<i  class="fa fa-chevron-right"></i><hr>
+                                ĐỒ CHƠI SỐ<i  class="fa fa-chevron-right"></i><hr>
+                                VIDEO<i  class="fa fa-chevron-right"></i><hr>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+<!--end menu - hide-->
+<!--    ads-top-->
+        <div class="ads">
+            <div class="container-fluid bg">
+                <div class="container">
+                    <img src="img/bangron%20chuong%20trinh%20dich%20vu-01.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+<!-- end ads-top-->
+
+<!--    popup-->
+    <div class="container">
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">GenK Video</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <iframe width="100%" height="250px" src="https://www.youtube.com/embed/Phg2hKaFX6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--    end popup-->
+<div class="main">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="content col-md-9 col-sm-9 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <img src="img/photo1583243845841-15832438460361343579946.jpg" alt="">
+                            <a href=""><h3><b>Đây có phải cơ hội vàng cho Vsmart? 100% người Việt sẽ được mua smartphone giá chỉ chưa đến 500 nghìn đồng!</b></h3>
+                            </a>
+                                <p>Tại Hội nghị giao ban Quản lý Nhà nước Quý 1/2020 của Bộ Thông tin & Truyền thông (TT&TT) diễn ra sáng 2/3 tại Hà Nội, chương trình phổ cập điện thoại thông minh tới 100% dân số đã được công bố. Trong khuôn khổ chương trình này, nhà mạng, nhà phát triển ứng dụng và nhà sản xuất sẽ cùng bắt tay trợ giá để đưa những chiếc smartphone Việt Nam từ khung giá 45 – 50 USD xuống còn khoảng 20 USD, tức là chưa tới 500.000 đồng.
+                            </p>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <img src="img/photo-1-15834899048511980823924.jpg" alt="">
+                            <a href="">
+                                <h3><b>Oppo Find X2 và Find X2 Pro ra mắt: Thiết kế ấn tượng, màn hình đỉnh cao 120Hz 1440p, camera top 1 DxOMark, sạc nhanh 65W, giá bán 1.350 USD</b></h3>
+
+                            </a>
+                            <p>Chiếc smartphone Find X thế hệ hai đã có nhiều thay đổi về thiết kế, đặc biệt không còn sử dụng cơ chế màn hình trượt, mà thay vào đó là thiết kế màn hình đục lỗ. Mặc dù không còn quá mới mẻ, nhưng thiết kế tổng thể của Find X2 với màn hình uốn cong và viền siêu mỏng vẫn rất cuốn hút...
+                                </p>
+                        </div>
+                    </div>
+                    <!--                slider start-->
+                    <div class="slider">
+                        <div class="row slide">
+                            <div class="detail-slide col-md-4 col-sm-4 col-xs-12">
+                            <img src="img/slide1.jpg" alt="">
+                                <a href="">
+                                    <h3>Giải ngố: Tại sao chúng ta cứ vô thức chạm tay lên mặt mình, ngay cả khi biết cần phòng tránh Covid-19?</h3>
+                                </a>
+                                <p>Những hành động vô thức và bản năng được tự động kích hoạt trong não bộ của bạn, bạn chỉ có vài phần nghìn giây để dùng ý chí đàn áp nó...</p>
+                        </div>
+                        <div class="detail-slide col-md-4 col-sm-4 col-xs-12">
+                            <img src="img/layer-6-1582782139269104702570.png" alt="">
+                            <a href="">
+                                <h3>Hiểm họa tương lai: AI không chỉ lấy mất việc làm của con người, nó còn trực tiếp ngăn người lao động tìm việc</h3>
+                            </a>
+                            <p>Thời thế thay đổi: trước khi được ngồi đối diện với cặp “mắt xanh” của nhà tuyển dụng, các em phải lọt được “mắt thần” của trí tuệ nhân tạo.</p>
+                        </div>
+                        <div class="detail-slide col-md-4 col-sm-4 col-xs-12">
+                            <img src="img/Screenshot_3.png" alt="">
+                            <a href="">
+                                <h3>Đánh giá Galaxy Buds+: Tai nghe true wireless đáng tiền nhất hiện nay, nhưng cần điều chỉnh thì mới dùng "ngon"</h3>
+                            </a>
+                            <p>Dù thiết kế không đổi so với người tiền nhiệm, nhưng những nâng cấp mà Samsung mang đến cho Buds+ vẫn giúp cho nó trở thành tai nghe TWS cực kỳ đáng giá trong phân khúc.</p>   </div>
+                            <!-- Left and right controls -->
+                            <a class="prev" >
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="next" >
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+
+
+                    </div>
+                </div>
+                    <div class="ngang"></div>
+                    <div class="home">
+
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/slide2.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <a href="">
+                                    <b><h3>AnTuTu công bố top 10 smartphone Android có điểm hiệu năng cao nhất tháng 2/2020: Vị trí dẫn đầu thuộc về Xiaomi</h3></b>
+                                </a>
+                                <b>Mobile - 1 giờ trước</b>
+                                <p>Không phải chỉ một, cả hai mẫu smartphone mới ra mắt của Xiaomi là Mi 10 Pro và Mi 10 đều lần lượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/slide3.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <a href="">
+                                    <b><h3>Siết chặt các quy định về thuế đối với người kinh doanh qua Facebook, Youtube... từ ngày 1/7</h3></b>
+                                </a>
+                                <b>Mobile - 2 giờ trước</b>
+                                <p>Không phải chỉ một, cả hai mẫu smartphone mới ra mắt của Xiaomi là Mi 10 Pro và Mi 10 đều lần lượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/them1.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <a href="">
+                                    <b><h3>Đánh giá hiệu năng OPPO A91: Phần mềm bổ trợ cho phần cứng</h3></b>
+                                </a>
+                                <b>Mobile - 2giờ trước</b>
+                                <p>Nhân tố không thể không thể không nhắc tới giúp cho trải nghiệm chơi game trên OPPO A91 trở nên vượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap" >
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/them2.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <a href="">
+                                    <b><h3>Realme C1 và C2 từng được bán rất chạy tại thị trường Việt Nam và lần này chiếc C3 có lập thêm kì tích trong năm 2020</h3></b>
+                                </a>
+                                <b>Mobile - 2 giờ trước</b>
+                                <p>Realme C1 và C2 từng được bán rất chạy tại thị trường Việt Nam và lần này chiếc C3 có lập thêm kì tích...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-6 tinnoibat">
+                                <p class="noibat">|</p>
+                                <h2>Tin nổi bật</h2>
+                                <img src="img/vv1-1582781912721527488530.jpg" alt="">
+                                <a class="tit" href="">Một cái bắt tay giữa Viettel và Vsmart sẽ là cái kết cho smartphone Trung Quốc giá rẻ?</a><hr>
+                                <a href=""><p>Samsung không nói dối: màn hình Galaxy Z Flip thực sự được làm từ kính, vì chỉ kính mới gãy được như thế này</p>
+                                </a> <hr>
+                                <a href=""><p>Vsmart đang dùng chính chiêu bài của người Trung Quốc để đánh bật smartphone Trung Quốcd</p></a>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-6 mygenk">
+                                <p class="noibat">|</p>
+                                <h2>MyGenK</h2>
+                                <i id="special" class="fa fa-chevron-right"></i>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <a href=""> Apple cho phép các ứng dụng iOS làm phiền người dùng bằng quảng cáo qua notification</a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img src="img/img1.jpg" alt=""></img>
+
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <a href=""> Đánh giá hiệu năng OPPO A91: Phần mềm bổ trợ cho phần cứng</a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img src="img/img3.jpg" alt=""></img>
+
+                                    </div>
+                                </div><hr>
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <a href=""> Đánh giá hiệu năng OPPO A91: Phần mềm bổ trợ cho phần cứng</a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img src="img/img2.jpg" alt=""></img>
+
+                                    </div>
+                                </div><hr>
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <a href="">Realme C1 và C2 từng được bán rất chạy tại thị trường Việt Nam và lần này chiếc C3 có lập thêm kì tích trong năm 2020</a>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <img src="img/img4.jpg" alt=""></img>
+
+                                    </div>
+                                </div><hr>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <a href=""><div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="">SCMP: Bệnh nhân TQ được "điều trị khỏi COVID-19" tử vong sau 5 ngày xuất viện</a>
+                                            </div>
+
+                                        </div></a>
+                                    </div>
+
+                                </div><hr>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <a href=""><div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="">Chụp được ảnh virus Covid-19 ở độ phân giải nguyên tử, các nhà khoa học khám phá ra bản chất lây nhiễm hóa học của nó</a>
+                                            </div>
+
+                                        </div></a>
+                                    </div>
+
+                                </div><hr>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <a href=""><div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="">Apple, Microsoft, Google tìm cách chuyển sản xuất sang Việt Nam, nhưng điều đó có dễ dàng như tưởng tượng?</a>
+                                            </div>
+
+                                        </div></a>
+                                    </div>
+
+                                </div><hr>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <a href=""><div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="">Những hình ảnh độc lạ nhất trên máy bay mà các hành khách từng chụp được: Dám cá là bạn chưa thấy quá nửa!</a>
+                                            </div>
+
+                                        </div></a>
+                                    </div>
+
+                                </div><hr>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <a href=""><div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="">Gấu Bắc cực đang bị buộc phải ăn thịt đồng loại, do biến đổi khí hậu và con người</a>
+                                            </div>
+
+                                        </div></a>
+                                    </div>
+
+                                </div><hr>
+
+
+
+
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/them2.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>AnTuTu công bố top 10 smartphone Android có điểm hiệu năng cao nhất tháng 2/2020: Vị trí dẫn đầu thuộc về Xiaomi</h3>
+                                <b>Mobile - 1 giờ trước</b>
+                                <p>Không phải chỉ một, cả hai mẫu smartphone mới ra mắt của Xiaomi là Mi 10 Pro và Mi 10 đều lần lượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/them1.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>Siết chặt các quy định về thuế đối với người kinh doanh qua Facebook, Youtube... từ ngày 1/7</h3>
+                                <b>Mobile - 2 giờ trước</b>
+                                <p>Không phải chỉ một, cả hai mẫu smartphone mới ra mắt của Xiaomi là Mi 10 Pro và Mi 10 đều lần lượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/img3.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>Đánh giá hiệu năng OPPO A91: Phần mềm bổ trợ cho phần cứng</h3>
+                                <b>Mobile - 2giờ trước</b>
+                                <p>Nhân tố không thể không thể không nhắc tới giúp cho trải nghiệm chơi game trên OPPO A91 trở nên vượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/img4.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>Realme C1 và C2 từng được bán rất chạy tại thị trường Việt Nam và lần này chiếc C3 có lập thêm kì tích trong năm 2020</h3>
+                                <b>Mobile - 2 giờ trước</b>
+                                <p>Realme C1 và C2 từng được bán rất chạy tại thị trường Việt Nam và lần này chiếc C3 có lập thêm kì tích...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="dungbo">
+                            Đừng bỏ lỡ
+                        </div>
+                        <div class="thanh">
+
+                        </div>
+                        <div class=" row tindungbolo">
+                            <div class="col-xs-4">
+                                <img src="img/photodog-1-15832241743551504361856.jpg" alt="">
+                                <a href="">
+                                    <b>Chuyên gia khẳng định thú cưng không thể nhiễm Covid-19, vậy lý do một chú chó ở Hồng Kông dương tính với virus là gì?</b>
+
+                                </a>  </div>
+                            <div class="col-xs-4">
+                                <img src="img/black-background-15832305182471855023322.png" alt="">
+                                <a href="">
+                                    <b>Bề mặt Trái Đất sẽ trông như thế nào nếu các đại dương bị hút cạn nước biển?</b>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="img/photo-1-15833052583241062954670.jpg" alt="">
+                                <a href="">
+                                    <b>Người Nhật Bản đã không còn "lịch sự" nổi nữa trong thời Covid-19</b>
+                                </a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/img1.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>AnTuTu công bố top 10 smartphone Android có điểm hiệu năng cao nhất tháng 2/2020: Vị trí dẫn đầu thuộc về Xiaomi</h3>
+                                <b>Mobile - 1 giờ trước</b>
+                                <p>Không phải chỉ một, cả hai mẫu smartphone mới ra mắt của Xiaomi là Mi 10 Pro và Mi 10 đều lần lượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/img2.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>Siết chặt các quy định về thuế đối với người kinh doanh qua Facebook, Youtube... từ ngày 1/7</h3>
+                                <b>Mobile - 2 giờ trước</b>
+                                <p>Không phải chỉ một, cả hai mẫu smartphone mới ra mắt của Xiaomi là Mi 10 Pro và Mi 10 đều lần lượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/them2.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>Đánh giá hiệu năng OPPO A91: Phần mềm bổ trợ cho phần cứng</h3>
+                                <b>Mobile - 2giờ trước</b>
+                                <p>Nhân tố không thể không thể không nhắc tới giúp cho trải nghiệm chơi game trên OPPO A91 trở nên vượt...</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row lap">
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <img  src="img/img4.jpg" alt="">
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-9">
+                                <h3>Realme C1 và C2 từng được bán rất chạy tại thị trường Việt Nam và lần này chiếc C3 có lập thêm kì tích trong năm 2020</h3>
+                                <b>Mobile - 2 giờ trước</b>
+                                <p>Realme C1 và C2 từng được bán rất chạy tại thị trường Việt Nam và lần này chiếc C3 có lập thêm kì tích...</p>
+                            </div>
+                        </div>
+                        <hr>
+
+
+
+
+                    </div>
+                    <div class="button-more col-xs-12">
+                        <button onclick="testsweet()" >Xem thêm
+                        </button>
+                    </div>
+
+
+
+                </div>
+                <!--                slider end-->
+
+
+
+
+<!--quảng cáo-->
+                <div class="side col-md-3">
+                    <img src="img/side3.jpg" alt="">
+                    <img src="img/side2.jpg" alt="">
+                    <img src="img/side.jpg" alt="">
+<!--end quảng cáo-->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--    footer-->
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row footer-logo">
+                    <img src="img/logogenk%20(2).png" alt="">
+                </div>
+                <div class="row menu-footer">
+                    <ul>
+                        <li><a href="">Video</a></li>
+                        <li><a href="">Mobile</a></li>
+                        <li><a href="">Tin ICT</a></li>
+                        <li><a href="">Khám phá</a></li>
+                        <li><a href="">Trà đá Công nghệ</a></li>
+                        <li><a href="">Thủ thuật</a></li>
+                        <li><a href="">App - Games</a></li>
+                        <li><a href="">Đồ chơi số</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="bottom-footer">
+                    <div class="w1040">
+                        <div class="gfwbf-left fl col-xs-6">
+                            <div class="w190">
+                                <a href="http://www.vccorp.vn/" target="_blank" rel="nofollow" title="Công ty Cổ phần VCCorp" class="logovcorp">
+                                    <i class="logovccorpnew sprite-genk"></i>
+                                </a>
+                            </div>
+                            <br>
+                            <p>
+                                Chịu trách nhiệm quản lý nội dung: Bà Nguyễn Bích Minh<br>
+                                Hà Nội: Tầng 20, Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.<br>
+                                Email: <a href="mailto:info@genk.vn" rel="nofollow">info@genk.vn</a>
+                                <br>
+                                Điện thoại: 024.73095555, máy lẻ 62374<br>
+                                VPĐD tại TP.HCM: Tầng 4, Tòa nhà 123
+                                <br>
+                                Võ Văn Tần, Phường 6, Quận 3, Tp. Hồ Chí Minh
+                                <br>
+                            </p>
+
+                            <p>
+                                <b>© Copyright 2010 - 2020 - Công ty Cổ phần VCCorp</b><br>
+                                Tầng 17, 19, 20, 21 Toà nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.<br>
+                                Trang tin điện tử trên internet: Giấy phép số 460/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 03/02/2016<br>
+                            </p>
+                        </div>
+                        <div class="gfwbf-right col-xs-6">
+                            <a rel="nofollow" href="http://www.vccorp.vn" title="Công ty Cổ phần VCCorp" target="_blank">
+                                <img src="https://vccorp.mediacdn.vn/vccorp-m.png" alt="Công ty Cổ phần VCCorp" class="mb10">
+                            </a>
+                            <h4 class="contact">Liên hệ quảng cáo</h4>
+                            <span class="sprite-genk i-admicro"></span>
+                            <p>
+                                Hotline hỗ trợ quảng cáo: 0942 86 11 33 <br>
+
+
+                                <br>
+                                Email: <a href="mailto:giaitrixahoi@admicro.vn" rel="nofollow">giaitrixahoi@admicro.vn</a><br>
+                                Hỗ trợ &amp; CSKH: Admicro
+
+                                <br>
+                                Address: Tầng 20, Tòa nhà Center Building - Hapulico Complex, Số 1 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội.<br>
+                                <br>
+
+                            </p>
+                        </div>
+                        <div class="gotop">
+                            <a href="#">
+                                <i class="fa fa-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- end footer-->
+    <script>
+        function testsweet() {
+            swal("Thành công", "Bạn đã bấm xem thêm!", "success");
+        }
+    </script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
